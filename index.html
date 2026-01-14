@@ -36,7 +36,7 @@
                 <span class="bar"></span>
                 <span class="bar"></span>
             </div>
-            <ul class="nav-links animate-slide-in-left" id="nav-links">
+            <ul class="nav-links" id="nav-links">
                 <li class="animate-slide-in-left"><a href="#home"><i class="fas fa-home"></i> Inicio</a></li>
                 <li class="animate-slide-in-left"><a href="#about"><i class="fas fa-info"></i> Nosotros</a></li>
                 <li class="animate-slide-in-left"><a href="#services"><i class="fas fa-file"></i> Servicios</a></li>
@@ -228,8 +228,21 @@
             const menu = document.getElementById('nav-links');
             if (!hamb || !menu) return;
             hamb.addEventListener('click', () => {
+
+                if (menu.classList.contains('active')) {
+                    menu.classList.remove('active');
+                    menu.classList.add('closing');
+
+                    menu.addEventListener('animationend', function handler() {
+                        menu.classList.remove('closing');
+                        menu.removeEventListener('animationend', handler);
+                    });
+                } else {
+                    menu.classList.remove('closing');
+                    menu.classList.add('active');
+                }
                 hamb.classList.toggle('active');
-                menu.classList.toggle('active');
+
             });
         })();
     </script>

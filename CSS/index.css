@@ -61,8 +61,16 @@
      animation: fadeInUp 0.8s ease-out forwards;
  }
 
+ .animate-fade-in-down {
+     animation: fadeInUp 0.8s ease-out backwards;
+ }
+
  .animate-slide-in-left {
      animation: slideInLeft 0.8s ease-out forwards;
+ }
+
+ .animate-slide-in-right {
+     animation: slideInLeft 0.8s ease-out backwards;
  }
 
  .animate-pulse {
@@ -112,6 +120,16 @@
      display: flex;
      list-style: none;
      gap: 25px;
+ }
+
+ #nav-links.active {
+     left: 0;
+     animation: slideInLeft 0.8s ease-out forwards;
+ }
+
+ #nav-links.closing {
+     left: -100%;
+     animation: slideInLeft 0.8s ease-out backwards;
  }
 
  .nav-links a {

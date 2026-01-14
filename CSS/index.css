@@ -127,8 +127,33 @@
 
  .hamburger {
      display: none;
+     flex-direction: column;
      cursor: pointer;
+     padding: .5rem;
  }
+
+ .bar {
+     display: block;
+     width: 25px;
+     height: 3px;
+     background: #333;
+     margin: 3px 0;
+     transition: 0.3s;
+ }
+
+
+ .hamburger.active .bar:nth-child(2) {
+     opacity: 0;
+ }
+
+ .hamburger.active .bar:nth-child(1) {
+     transform: translateY(50%) rotate(45deg);
+ }
+
+ .hamburger.active .bar:nth-child(3) {
+     transform: translateY(-50%) rotate(-45deg);
+ }
+
 
  /* Carrusel Hero */
  .hero-section {
@@ -442,14 +467,35 @@
 
  /* Responsive Design */
  @media (max-width: 768px) {
-     .nav-links {
-         display: none;
-     }
 
      .hamburger {
-         display: block;
+         display: flex;
      }
 
+     #nav-links {
+         position: fixed;
+         text-align: right;
+         left: -100%;
+         top: 0;
+         width: 70%;
+         height: 100vh;
+         background: #fff;
+         flex-direction: column;
+         padding-top: 6rem;
+         padding-right: 2rem;
+         margin: 0;
+         transition: left 0.3s ease;
+         box-shadow: 0 10px 27 rgba(0, 0, 0, .65);
+     }
+     
+
+     #nav-links.active {
+         left: 0;
+     }
+
+     .logo{
+        font-size: 12px;
+     }
      .carousel-content h1 {
          font-size: 2.5rem;
      }
@@ -469,23 +515,10 @@
  }
 
  @media (max-width: 480px) {
+     
+
      .logo {
-        font-size: 12px;
-     }
-
-     .carousel-container{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        align-content: center;
-     }
-
-
-     .carousel-slide{
-        display: flexbox;
-        justify-content: center;
-        align-items: center;
-        align-content: center;
+         font-size: 12px;
      }
 
      .carousel-content h1 {

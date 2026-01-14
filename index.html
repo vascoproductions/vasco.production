@@ -31,17 +31,18 @@
                 <img src="ICO/negro_icon.png" alt="VASCO. Production" class="compani_icon">
                 <h1 class="marca" style="font-family: 'Times New Roman', Times, serif;">VASCO. Productions</h1>
             </div>
-            <ul class="nav-links">
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="nav-links" id="nav-links">
                 <li><a href="#home"><i class="fas fa-home"></i> Inicio</a></li>
                 <li><a href="#about"><i class="fas fa-info"></i> Nosotros</a></li>
                 <li><a href="#services"><i class="fas fa-file"></i> Servicios</a></li>
                 <li><a href="#contact"><i class="fas fa-mobile"></i> Contacto</a></li>
             </ul>
-            <div class="hamburger">
-                <span style="display:block;width:25px;height:3px;background:#333;margin:5px 0;"></span>
-                <span style="display:block;width:25px;height:3px;background:#333;margin:5px 0;"></span>
-                <span style="display:block;width:25px;height:3px;background:#333;margin:5px 0;"></span>
-            </div>
+
         </nav>
     </header>
 
@@ -190,7 +191,7 @@
                             class="fab fa-facebook-f"></i></a>
                     <a href="https://instagram.com" target="_blank" class="social-link"><i
                             class="fab fa-instagram"></i></a>
-                    
+
                     <a href="https://wa.me/5363699055" target="_blank" class="social-link"><i
                             class="fab fa-whatsapp"></i></a>
                     <a href="mailto:vasco.productions.info@gmail.com" target="_blank" class="social-link"><i
@@ -222,7 +223,20 @@
             <p>&copy; 2026 VASCO. Productions <br> <span translate="yes">Todos los derechos reservados.</span></p>
         </div>
     </footer>
+    <script>
+        (function () {
+            const hamb = document.getElementById('hamburger');
+            const menu = document.getElementById('nav-links');
+            if (!hamb || !menu) return;
+            hamb.addEventListener('click', () => {
+                console.log("si");
+                hamb.classList.toggle('active');
+                menu.classList.toggle('active');
+            });
+        })();
+    </script>
     <script src="JS/index.js"></script>
+
 </body>
 
 </html>

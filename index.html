@@ -36,11 +36,11 @@
                 <span class="bar"></span>
                 <span class="bar"></span>
             </div>
-            <ul class="nav-links" id="nav-links">
-                <li><a href="#home"><i class="fas fa-home"></i> Inicio</a></li>
-                <li><a href="#about"><i class="fas fa-info"></i> Nosotros</a></li>
-                <li><a href="#services"><i class="fas fa-file"></i> Servicios</a></li>
-                <li><a href="#contact"><i class="fas fa-mobile"></i> Contacto</a></li>
+            <ul class="nav-links animate-slide-in-left" id="nav-links">
+                <li class="animate-slide-in-left"><a href="#home"><i class="fas fa-home"></i> Inicio</a></li>
+                <li class="animate-slide-in-left"><a href="#about"><i class="fas fa-info"></i> Nosotros</a></li>
+                <li class="animate-slide-in-left"><a href="#services"><i class="fas fa-file"></i> Servicios</a></li>
+                <li class="animate-slide-in-left"><a href="#contact"><i class="fas fa-mobile"></i> Contacto</a></li>
             </ul>
 
         </nav>
@@ -104,22 +104,22 @@
                     audiovisual, trabajando juntos para ofrecer resultados excepcionales.</p>
                 <br>
                 <h3>Años de experiencia</h3>
-                <div class="stats">
-                    <div class="stat-item">
-                        <div class="stat-number">4</div>
-                        <div class="stat-label">Diseño Gráfico</div>
+                <div class="stats animate-slide-in-left">
+                    <div class="stat-item animate-fade-in-up">
+                        <div class="stat-number animate-fade-in-up">4</div>
+                        <div class="stat-label animate-fade-in-up">Diseño Gráfico</div>
                     </div>
-                    <div class="stat-item">
-                        <div class="stat-number">6</div>
+                    <div class="stat-item animate-fade-in-up">
+                        <div class="stat-number animate-fade-in-up">6</div>
                         <div class="stat-label">Desarrollo de Software</div>
                     </div>
-                    <div class="stat-item">
-                        <div class="stat-number">4</div>
-                        <div class="stat-label">Edición de Videos</div>
+                    <div class="stat-item animate-fade-in-up">
+                        <div class="stat-number animate-fade-in-up">4</div>
+                        <div class="stat-label animate-fade-in-up">Edición de Videos</div>
                     </div>
-                    <div class="stat-item">
-                        <div class="stat-number">15</div>
-                        <div class="stat-label">Traducciones</div>
+                    <div class="stat-item animate-fade-in-up">
+                        <div class="stat-number animate-fade-in-up">15</div>
+                        <div class="stat-label animate-fade-in-up">Traducciones</div>
                     </div>
                 </div>
             </div>
@@ -134,10 +134,10 @@
     <section id="services" class="services-section">
         <h2 class="section-title">Nuestros Servicios</h2>
         <div class="services-grid">
-            <div class="service-card">
+            <div class="service-card animate-fade-in-up">
                 <img src="https://picsum.photos/seed/graphicdesign/400/240.jpg" alt="Diseño Gráfico"
                     class="service-icon">
-                <div class="service-content">
+                <div class="service-content animate-fade-in-up">
                     <h3>Diseño Gráfico</h3>
                     <p>Branding, logotipos, packaging, materiales promocionales y diseño web. Creamos identidades
                         visuales coherentes que representan tu marca.</p>
@@ -145,10 +145,10 @@
                 </div>
             </div>
 
-            <div class="service-card">
+            <div class="service-card animate-fade-in-up">
                 <img src="https://picsum.photos/seed/softwaredev/400/240.jpg" alt="Desarrollo de Software"
                     class="service-icon">
-                <div class="service-content">
+                <div class="service-content animate-fade-in-up">
                     <h3>Desarrollo de Software</h3>
                     <p>Aplicaciones web, móviles y sistemas personalizados. Utilizamos tecnologías modernas para
                         construir soluciones escalables y seguras.</p>
@@ -156,9 +156,9 @@
                 </div>
             </div>
 
-            <div class="service-card">
+            <div class="service-card animate-fade-in-up">
                 <img src="https://picsum.photos/seed/vfx/400/240.jpg" alt="VFX & Edición" class="service-icon">
-                <div class="service-content">
+                <div class="service-content animate-fade-in-up">
                     <h3>VFX & Edición de Videos</h3>
                     <p>Producción de contenido audiovisual, efectos especiales, motion graphics y edición profesional
                         para campañas publicitarias y branded content.</p>
@@ -166,10 +166,10 @@
                 </div>
             </div>
 
-            <div class="service-card">
+            <div class="service-card animate-fade-in-up">
                 <img src="https://picsum.photos/seed/translation/400/240.jpg" alt="Traducción de Idiomas"
                     class="service-icon">
-                <div class="service-content">
+                <div class="service-content animate-fade-in-up">
                     <h3>Traducciones de Idiomas</h3>
                     <p>Servicio de localización y traducción profesional en múltiples idiomas, asegurando la precisión
                         cultural y técnica en tus comunicaciones globales.</p>
@@ -229,7 +229,6 @@
             const menu = document.getElementById('nav-links');
             if (!hamb || !menu) return;
             hamb.addEventListener('click', () => {
-                console.log("si");
                 hamb.classList.toggle('active');
                 menu.classList.toggle('active');
             });

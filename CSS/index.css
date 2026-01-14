@@ -138,7 +138,7 @@
      height: 3px;
      background: #333;
      margin: 3px 0;
-     transition: 0.3s;
+     transition: 1s;
  }
 
 
@@ -465,6 +465,9 @@
      color: #94a3b8;
  }
 
+
+
+
  /* Responsive Design */
  @media (max-width: 768px) {
 
@@ -484,18 +487,19 @@
          padding-top: 6rem;
          padding-right: 2rem;
          margin: 0;
-         transition: left 0.3s ease;
+         transition: left 1s ease;
          box-shadow: 0 10px 27 rgba(0, 0, 0, .65);
      }
-     
+
 
      #nav-links.active {
          left: 0;
      }
 
-     .logo{
-        font-size: 12px;
+     .logo {
+         font-size: 12px;
      }
+
      .carousel-content h1 {
          font-size: 2.5rem;
      }
@@ -515,8 +519,6 @@
  }
 
  @media (max-width: 480px) {
-     
-
      .logo {
          font-size: 12px;
      }

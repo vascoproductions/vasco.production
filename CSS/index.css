@@ -500,6 +500,16 @@
          font-size: 12px;
      }
 
+     .carousel-slide {
+         display: flexbox;
+         align-items: center;
+     }
+
+     .carousel-content {
+         left: 10%;
+         right: 10%;
+     }
+
      .carousel-content h1 {
          font-size: 2.5rem;
      }

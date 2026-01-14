@@ -103,8 +103,9 @@
      width: 60px;
      margin-right: 10px;
  }
- .marca{
-    font-family: 'Times New Roman', Times, serif;
+
+ .marca {
+     font-family: 'Times New Roman', Times, serif;
  }
 
  .nav-links {
@@ -138,6 +139,7 @@
 
  .carousel-container {
      position: relative;
+     display: flexbox;
      height: 100%;
  }
 
@@ -467,6 +469,25 @@
  }
 
  @media (max-width: 480px) {
+     .logo {
+        font-size: 12px;
+     }
+
+     .carousel-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+     }
+
+
+     .carousel-slide{
+        display: flexbox;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+     }
+
      .carousel-content h1 {
          font-size: 2rem;
      }

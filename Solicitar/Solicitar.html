@@ -267,7 +267,7 @@
                 </div>
             </div>
 
-            <div class="buttons"><button class="button1" id="submitBtn" type="submit" disabled><b>ENVIAR</b></button>
+            <div class="buttons"><button class="button1" id="submitBtn" disabled><b>ENVIAR</b></button>
             </div>
         </section>
     </div>
@@ -318,7 +318,6 @@
     </footer>
 
     <script>
-
         /* ----------  CONFIG  ---------- */
         const SERVICE_ID = 'service_vascomsg';
         const TEMPLATE_ID = 'template_ads72dp';
@@ -326,7 +325,7 @@
         const ALLOWED_ORIGIN = 'https://vascoproductions.github.io';
         const RATE_KEY = 'emailjs_last_sent';
 
-        emailjs.init(PUBLIC_KEY);
+        emailjs.init({ publicKey: PUBLIC_KEY });
 
         /* ----------  UTILS  ---------- */
         function canSend() {
@@ -351,7 +350,7 @@
                 nombre2: document.getElementById('nom2').value.trim(),
                 apellido1: document.getElementById('apel1').value.trim(),
                 apellido2: document.getElementById('apel2').value.trim(),
-                ci: document.getElementById('ci').value.trim(),
+                ci: document.getElementById('ident').value.trim(),
                 direccion: document.getElementById('direcc').value.trim(),
                 tel_residencial: document.getElementById('telres').value.trim(),
                 tel_movil: document.getElementById('telmov').value.trim(),

@@ -6,6 +6,7 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Page Title</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel='stylesheet' type='text/css' media='screen' href='CSS/solicitar.css'>
     <!-- reCAPTCHA v2 -->
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
@@ -124,8 +125,10 @@
                     </li>
                 </ol>
 
-                <div class="descargar1"><a href="docs/Solisitud.docx" download="Solicitud.docx" class="descargar">
-                        Descargar Documento</a></div>
+                <div class="descargar1">
+                    <a href="docs/Solicitud(Español).docx" download="Solicitud.docx" class="descargar">
+                        Descargar Documento</a>
+                </div>
             </div>
         </section>
 
@@ -143,13 +146,15 @@
                         <p>Es necesario el llenado de todos los campos con letra tamaño 12.</p>
                     </li>
                     <li>
-                        <p>No se admiten abreviaturas, ni faltas de ortografía, ni doble tipografía o tamaño de letra.</p>
+                        <p>No se admiten abreviaturas, ni faltas de ortografía, ni doble tipografía o tamaño de letra.
+                        </p>
                     </li>
                     <li>
                         <p>Los datos personales deben coincidir con su documento oficial de identidad.</p>
                     </li>
                     <li>
-                        <p>Es necesario el llenado de todos los campos como paso previo a la definición de los términos del contrato.</p>
+                        <p>Es necesario el llenado de todos los campos como paso previo a la definición de los términos
+                            del contrato.</p>
                     </li>
                     <li>
                         <p>Es necesario poner el prefijo numeral del número de teléfono subscrito, vg.: (+1).</p>
@@ -365,8 +370,9 @@
 
 
         /* ----------  ENVÍO  ---------- */
-        document.getElementById('online').addEventListener('submit', function (e) {
+        document.getElementById('submitBtn').addEventListener('submit', function (e) {
             e.preventDefault();
+            console.log('funciona');
 
             // 1. solo desde tu dominio
             if (location.origin !== ALLOWED_ORIGIN) {

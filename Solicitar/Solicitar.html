@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='CSS/solicitar.css'>
+    <!-- reCAPTCHA v2 -->
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <!-- EmailJS -->
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="nave">
+            <div class="logo" id="logo" translate="no">
+                <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" id="svg1" alt="VASCO. Production"
+                    class="compani_icon" viewBox="0 0 130 130">
+                    <title id="title9">VASCO. Production</title>
+                    <defs id="defs1">
+                        <path id="rect6" d="M-219.742 252.601h157.105v141.703h-157.105z" />
+                        <path id="rect5" d="M-207.42 363.499H12.322v175.588H-207.42z" />
+                        <path id="rect6-4" d="M-219.742 252.601h157.105v141.703h-157.105z" />
+                    </defs>
+                    <g id="layer1" style="opacity:1">
+                        <path id="path1"
+                            d="M65 0A65 65 0 0 0 0 65a65 65 0 0 0 65 65 65 65 0 0 0 65-65A65 65 0 0 0 65 0m0 2.5A62.5 62.5 0 0 1 127.5 65 62.5 62.5 0 0 1 65 127.5 62.5 62.5 0 0 1 2.5 65 62.5 62.5 0 0 1 65 2.5"
+                            style="display:inline;stroke-width:.263687" />
+                        <path id="path4"
+                            d="M65 4A61 61 0 0 0 4 65a61 61 0 0 0 61 61 61 61 0 0 0 61-61A61 61 0 0 0 65 4m0 11a50 50 0 0 1 50 50 50 50 0 0 1-50 50 50 50 0 0 1-50-50 50 50 0 0 1 50-50"
+                            style="display:inline;fill-opacity:1;stroke-width:1.20618" />
+                        <path id="text6-8"
+                            d="M-212.248 255.597c.055.141.083.235.13.39-.282.05-.476.13-.62.258-.207.192-.268.48-.379.88l-1.937 6.606h-.346l-2.288-6.85c-.152-.351-.174-.393-.236-.47-.098-.122-.176-.216-.32-.282-.141-.07-.16-.115-.402-.135l.215-.39h2.04v.39c-.367.035-.46.098-.585.188-.031.053-.081.105-.078.172.008.195.09.5.27.914l1.504 4.427 1.257-4.213c.161-.476.24-.705.275-.944.007-.051.12-.286.045-.38-.08-.065-.261-.122-.53-.165l-.1-.017v-.39z"
+                            aria-label="V"
+                            style="font-size:12px;font-family:&quot;Times New Roman&quot;;-inkscape-font-specification:&quot;Times New Roman, Normal&quot;;white-space:pre"
+                            transform="matrix(-12.28895 0 0 9.16066 -2581.174 -2306.48)" />
+                        <circle id="path8" cx="77.576" cy="106.96" r="3.5"
+                            style="display:inline;fill-opacity:1;stroke-width:.30868" />
+                    </g>
+                </svg>
+                <h1 class="marca" style="font-family: 'Times New Roman', Times, serif;">VASCO. Productions</h1>
+            </div>
+        </nav>
+    </header>
+
+    <div class="contenedor">
+        <!--Bienvenida-->
+        <section class="bienvenida" id="bienvenida">
+            <div>
+                <h1 class="titulo">SOLICITUD DE SERVICIO</h1>
+                <p class="contenido">Nuestra agencia está dispuesta brindarle el impulso que usted necesita para lograr
+                    sus
+                    objetivos
+                    profesionales a través de completamiento de este formulario de solicitud de servicio y descripción
+                    del
+                    producto. </p>
+
+                <p class="contenido">Entre nuestros objetivos está brindarle el servicio solicitado para el éxito de su
+                    actividad profesional.
+                </p>
+                <hr>
+                <p class="aviso contenido"><b>¡Por favor, nuestra compañía le agradece que lea bien los campos a llenar
+                        antes de
+                        completar el
+                        formulario de solicitud de servicio!</b> </p>
+                <hr>
+
+                <div>
+                    <p class="contenido">El formulario de solicitud puede ser completado en una de las tres modalidades:
+                    </p>
+                    <ul>
+                        <li><a href="#manuscrito">Modalidad 1: Llenado manuscrito.</a></li>
+                        <li><a href="#digital">Modalidad 2: Llenado digital.</a></li>
+                        <li><a href="#online">Modalidad 3: Online.</a></li>
+                    </ul>
+                </div>
+                <p>
+                    En la campo SOLICITUD, el cliente debe exponer qué servicio desea solicitar además de
+                    describir quién, para quién, el cómo, el por qué (causa), el para qué (objetivo) y el para cuándo
+                    (fecha de entrega) de su producto si lo considera necesario.
+                </p>
+                <p>El formulario puede ser completado in situ en el momento de la solicitud del servicio.</p>
+                <p>El formulario puede ser completado con más detenimiento y meditación y ser entregado cuando el
+                    solicitante lo desee. </p>
+                <p>Para que su formulario de solicitud de servicio sea aceptado es necesario que usted cumpla con los
+                    siguientes requisitos elementales para facilitar todo el protocolo formal a través de nuestra
+                    agencia:</p>
+            </div>
+        </section>
+
+        <!--Body Llenado Manuscrito-->
+        <section id="manuscrito">
+            <div>
+                <h2>Modalidad 1: Llenado Manuscrito</h2>
+                <ol>
+                    <li>
+                        <p>Es necesario el llenado de los campos con letra legible a fin de poder procesar sus datos.
+                        </p>
+                    </li>
+                    <li>
+                        <p>Es necesario el llenado de los campos con letra de molde.</p>
+                    </li>
+                    <li>
+                        <p>No se admiten abreviaturas, ni faltas de ortografía, ni tachaduras.</p>
+                    </li>
+                    <li>
+                        <p>Los datos personales deben coincidir con su documento oficial de identidad.</p>
+                    </li>
+                    <li>
+                        <p>Es necesario el llenado de los campos con bolígrafo de tinta azul o negra (no se aceptará en
+                            roja, verde u otro color alternativo).</p>
+                    </li>
+                    <li>
+                        <p>Es necesario poner el prefijo numeral del número de teléfono subscrito, vg.: (+1). </p>
+                    </li>
+                    <li>
+                        <p>El formulario puede ser completado con más detenimiento y meditación y ser entregado
+                            cuando el solicitante lo desee. </p>
+                    </li>
+                </ol>
+
+                <div class="descargar1"><a href="docs/Solisitud.docx" download="Solicitud.docx" class="descargar">
+                        Descargar Documento</a></div>
+            </div>
+        </section>
+
+        <!--Body Llenado Digital-->
+        <section id="digital">
+            <div>
+                <h2>Modalidad 2: Llenado Digital</h2>
+                <ol>
+                    <li>
+                        <p>Es necesario el llenado de todos los campos con tipografía Times New Romas a fin de poder
+                            procesar sus datos.
+                        </p>
+                    </li>
+                    <li>
+                        <p>Es necesario el llenado de todos los campos con letra tamaño 12.</p>
+                    </li>
+                    <li>
+                        <p>No se admiten abreviaturas, ni faltas de ortografía, ni doble tipografía o tamaño de letra.</p>
+                    </li>
+                    <li>
+                        <p>Los datos personales deben coincidir con su documento oficial de identidad.</p>
+                    </li>
+                    <li>
+                        <p>Es necesario el llenado de todos los campos como paso previo a la definición de los términos del contrato.</p>
+                    </li>
+                    <li>
+                        <p>Es necesario poner el prefijo numeral del número de teléfono subscrito, vg.: (+1).</p>
+                    </li>
+                    <li>
+                        <p>El formulario puede ser completado in situ en el momento de la solicitud de servicio.</p>
+                    </li>
+                </ol>
+
+                <div class="descargar2">
+                    <a href="docs/Solicitud(Español).docx" download="Solicitud.docx" class="descargar">
+                        Descargar Documento</a>
+                    <a href="mailto:vasco.productions.info@gmail.com?subject=Solicitud%20de%20Servicio." target="_blank"
+                        class="descargar">
+                        ENVIAR</a>
+                </div>
+            </div>
+        </section>
+
+        <!--Body Llenado online-->
+        <section class="online" id="online">
+            <div>
+                <h2>Modalidad 3: Online</h2>
+                <ol>
+                    <li>
+                        <p>Es necesario el llenado de todos los campos.</p>
+                    </li>
+                    <li>
+                        <p>No se admiten abreviaturas, ni faltas de ortografía. </p>
+                    </li>
+                    <li>
+                        <p>Los datos personales deben coincidir con su documento oficial de identidad.</p>
+                    </li>
+                    <li>
+                        <p>En caso de tener más de dos nombres y más de dos apellidos debe poner el nombre completo en
+                            la
+                            primera línea del campo (SOLICITUD). </p>
+                    </li>
+                    <li>
+                        <p>Es necesario poner el prefijo numeral del número de teléfono subscrito, vg.: (+1). </p>
+                    </li>
+                </ol>
+            </div>
+            <hr>
+            <div class="personales_datas">
+                <h1>DATOS PERSONALES</h1>
+                <div class="campos1">
+                    <div class="campos"><Label for="nom1">1er nombre </Label><input name="nombre1" id="nom1" type="text"
+                            required>
+                    </div>
+                    <div class="campos"><Label for="nom2">2do nombre </Label><input name="nombre2" id="nom2"
+                            type="text"></div>
+                    <div class="campos"><Label for="apel1">1er apellido </Label><input name="apellido1" id="apel1"
+                            type="text" required>
+                    </div>
+                    <div class="campos"><Label for="apel2">2do apellido </Label><input name="apellido2" id="apel2"
+                            type="text"></div>
+                </div>
+                <div class="campos"><label for="ident">No. de Identificación </label><input name="ci" id="ident"
+                        type="text" required></div>
+                <div class="campos"><label for="direcc">Dirección Residencial </label><input name="direccion"
+                        id="direcc" type="text" required></div>
+                <div class="campos1">
+                    <div class="campos"><label for="telres">Teléfono Residencial </label><input name="tel_residencial"
+                            id="telres" type="tel" placeholder="+00 00000000">
+                    </div>
+                    <div class="campos"><label for="telmov">Teléfono Celular </label><input name="tel_movil" id="telmov"
+                            type="tel" required placeholder="+00 00000000">
+                    </div>
+                </div>
+                <div class="campos"><label for="email">Correo Electrónico </label><input name="email" id="email"
+                        type="email" required></div>
+                <div class="campos1">
+                    <div class="campos"><label for="ciud">Ciudadanía </label><input name="ciudadania" id="ciud"
+                            type="text" required>
+                    </div>
+                    <div class="campos"><label for="pais">País de Residencia </label><input name="pais" id="pais"
+                            type="text" required>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="personales_datas">
+                <h1>DATOS COORPORATIVOS</h1>
+                <div class="campos"><label for="nom_corp">Nombre de la Entidad </label><input name="empresa"
+                        id="nom_corp" type="text" required></div>
+                <div class="campos"><label for="direcc_corp">Dirección </label><input name="empresa_direccion"
+                        id="direcc_corp" type="text">
+                </div>
+                <div class="campos1">
+                    <div class="campos"><label for="ciud_corp">Ciudad</label><input name="empresa_ciudad" id="ciud_corp"
+                            type="text"></div>
+                    <div class="campos"><label for="pais_corp">País</label><input name="empresa_pais" id="pais_corp"
+                            type="text"></div>
+                </div>
+                <div class="campos"><label for="email_corp">Correo(s) Electrónico(s)</label><input name="empresa_email"
+                        id="email_corp" type="text" required>
+                </div>
+            </div>
+            <hr>
+            <div class="campos">
+                <label for="msg">SOLICITUD</label>
+                <textarea name="descripcion" id="msg" cols="30" rows="10" placeholder="Escribe aquí..."></textarea>
+            </div>
+
+            <div class="captcha">
+                <!-- reCAPTCHA -->
+                <div class="g-recaptcha" data-sitekey="6Le0jUwsAAAAAN3TbnwOgOX8BqkN96YzzN1n42uN"
+                    data-callback="enableBtn">
+                </div>
+            </div>
+
+            <div class="buttons"><button class="button1" id="submitBtn" type="submit" disabled><b>ENVIAR</b></button>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="footer-content">
+            <div class="footer-column">
+                <h3 class="marca" translate="no">VASCO. Productions</h3>
+                <p>Agencia creativa integral dedicada a impulsar el crecimiento de tus negocios mediante soluciones
+                    innovadoras en diseño, tecnología y comunicación.</p>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/share/1A1xfprrQ1/" target="_blank" class="social-link"><i
+                            class="fab fa-facebook-f"></i></a>
+                    <a href="https://instagram.com/vasco._productions" target="_blank" class="social-link"><i
+                            class="fab fa-instagram"></i></a>
+                    <a href="https://wa.me/5363699055" target="_blank" class="social-link"><i
+                            class="fab fa-whatsapp"></i></a>
+                    <a href="mailto:vasco.productions.info@gmail.com" target="_blank" class="social-link"><i
+                            class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-column">
+                <h3>Contacto</h3>
+                <ul class="contact-info">
+                    <li><i class="fas fa-phone"></i> +53 6 369 9055</li>
+                    <li><i class="fas fa-envelope" translate="no"></i> vasco.productions.info@gmail.com</li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h3>Enlaces Rápidos</h3>
+                <ul class="quick-links">
+                    <li><a href="../index.html#home">Inicio</a></li>
+                    <li><a href="../index.html#about">Nosotros</a></li>
+                    <li><a href="../index.html#services">Servicios</a></li>
+                    <li><a href="#contact">Contacto</a></li>
+                    <li><a href="Solicitar/Solicitar.html">Solicitar</a></li>
+                    <li><a href="#">Términos de Servicio</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="copyright" translate="no">
+            <p>&copy; 2026 VASCO. Productions <br> <span translate="yes">Todos los derechos reservados.</span></p>
+        </div>
+    </footer>
+
+    <script>
+
+        /* ----------  CONFIG  ---------- */
+        const SERVICE_ID = 'service_vascomsg';
+        const TEMPLATE_ID = 'template_ads72dp';
+        const PUBLIC_KEY = 'DyHrP66CsUv7xoryi';
+        const ALLOWED_ORIGIN = 'https://vascoproductions.github.io';
+        const RATE_KEY = 'emailjs_last_sent';
+
+        emailjs.init(PUBLIC_KEY);
+
+        /* ----------  UTILS  ---------- */
+        function canSend() {
+            const last = localStorage.getItem(RATE_KEY);
+            if (!last) return true;
+            return Date.now() - parseInt(last) > 1000 * 60 * 60; // 1 h
+        }
+        function saveSend() {
+            localStorage.setItem(RATE_KEY, Date.now());
+        }
+
+        /* ----------  CAPTCHA  ---------- */
+        function enableBtn() {
+            document.getElementById('submitBtn').disabled = false;
+        }
+
+
+        /* ----------  OBTENER DATOS  ---------- */
+        function collectData() {
+            return {
+                nombre1: document.getElementById('nom1').value.trim(),
+                nombre2: document.getElementById('nom2').value.trim(),
+                apellido1: document.getElementById('apel1').value.trim(),
+                apellido2: document.getElementById('apel2').value.trim(),
+                ci: document.getElementById('ci').value.trim(),
+                direccion: document.getElementById('direcc').value.trim(),
+                tel_residencial: document.getElementById('telres').value.trim(),
+                tel_movil: document.getElementById('telmov').value.trim(),
+                email: document.getElementById('email').value.trim(),
+                ciudadania: document.getElementById('ciud').value.trim(),
+                pais: document.getElementById('pais').value.trim(),
+                empresa: document.getElementById('nom_corp').value.trim(),
+                empresa_direccion: document.getElementById('direcc_corp').value.trim(),
+                empresa_ciudad: document.getElementById('ciud_corp').value.trim(),
+                empresa_pais: document.getElementById('pais_corp').value.trim(),
+                empresa_email: document.getElementById('email_corp').value.trim(),
+                descripcion: document.getElementById('msg').value.trim(),
+                'g-recaptcha-response': grecaptcha.getResponse()
+            };
+        }
+
+
+        /* ----------  ENVÍO  ---------- */
+        document.getElementById('online').addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            // 1. solo desde tu dominio
+            if (location.origin !== ALLOWED_ORIGIN) {
+                alert('Origen no permitido');
+                return;
+            }
+            // 2. ratelimit cliente
+            if (!canSend()) {
+                alert('Ya enviaste un mensaje hace menos de 1 h.');
+                return;
+            }
+            // 3. CAPTCHA chequeado
+            const response = grecaptcha.getResponse();
+            if (!response) {
+                alert('Por favor completa el CAPTCHA.');
+                return;
+            }
+            const data = collectData();
+
+            emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, data)
+                .then(() => {
+                    saveSend();
+                    alert('Mensaje enviado');
+                    grecaptcha.reset();
+                    document.querySelectorAll('online input, online textarea')
+                        .forEach(el => el.value = '');
+                    document.getElementById('submitBtn').disabled = true;
+                })
+                .catch(err => alert('Error: ' + JSON.stringify(err)));
+        });
+
+    </script>
+</body>
+
+</html>

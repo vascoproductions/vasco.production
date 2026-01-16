@@ -284,42 +284,7 @@
             });
         })();
 
-        //Para el cambio de color de la barra de navegacion
-        const header = document.querySelector('header');
-        const logo = document.getElementById('logo');
-        const bar = document.getElementById('bar');
-        const bar1 = document.getElementById('bar1');
-        const bar2 = document.getElementById('bar2');
-        const contact = document.getElementById('contact');
-
-        if (header && contact) {
-            const obs = new IntersectionObserver(
-                ([e]) => header.classList.toggle('scrolled-bottom', e.isIntersecting),
-                { threshold: 0.1 }
-            );
-            const obs1 = new IntersectionObserver(
-                ([e]) => logo.classList.toggle('blue', e.isIntersecting),
-                { threshold: 0.1 }
-            );
-            //los Bar
-            const obs2 = new IntersectionObserver(
-                ([e]) => bar.classList.toggle('blue', e.isIntersecting),
-                { threshold: 0.1 }
-            );
-            const obs3 = new IntersectionObserver(
-                ([e]) => bar1.classList.toggle('blue', e.isIntersecting),
-                { threshold: 0.1 }
-            );
-            const obs4 = new IntersectionObserver(
-                ([e]) => bar2.classList.toggle('blue', e.isIntersecting),
-                { threshold: 0.1 }
-            );
-
-            obs.observe(contact);
-            obs1.observe(contact);
-            obs2.observe(contact);
-            obs3.observe(contact);
-            obs4.observe(contact);
+       
     </script>
     <script src="JS/index.js"></script>
 

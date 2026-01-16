@@ -295,24 +295,24 @@
         if (header && contact) {
             const obs = new IntersectionObserver(
                 ([e]) => header.classList.toggle('scrolled-bottom', e.isIntersecting),
-                { threshold: 0.4 }
+                { threshold: 0.1 }
             );
             const obs1 = new IntersectionObserver(
                 ([e]) => logo.classList.toggle('blue', e.isIntersecting),
-                { threshold: 0.4 }
+                { threshold: 0.1 }
             );
             //los Bar
             const obs2 = new IntersectionObserver(
                 ([e]) => bar.classList.toggle('blue', e.isIntersecting),
-                { threshold: 0.4 }
+                { threshold: 0.1 }
             );
             const obs3 = new IntersectionObserver(
                 ([e]) => bar1.classList.toggle('blue', e.isIntersecting),
-                { threshold: 0.4 }
+                { threshold: 0.1 }
             );
             const obs4 = new IntersectionObserver(
                 ([e]) => bar2.classList.toggle('blue', e.isIntersecting),
-                { threshold: 0.4 }
+                { threshold: 0.1 }
             );
 
             obs.observe(contact);

@@ -370,7 +370,8 @@
 
 
         /* ----------  ENVÍO  ---------- */
-        document.getElementById('submitBtn').addEventListener('submit', function (e) {
+        const btn = document.getElementById('submitBtn');
+        btn?.addEventListener('click', e => {
             e.preventDefault();
             console.log('funciona');
 

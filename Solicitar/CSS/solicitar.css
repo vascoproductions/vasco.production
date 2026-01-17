@@ -201,6 +201,11 @@
      align-items: center;
  }
 
+ .g-recaptcha{
+    min-width: 300px;
+    margin-top: 1rem;
+ }
+
  .buttons {
      width: 100%;
      display: flex;

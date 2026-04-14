@@ -1,293 +1,917 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-        content="Estudio creativo multidisciplinario: modelado 3D/2D, VFX, edición de videos, desarrollo full-stack y traducción profesional.">
+        content="VASCO Productions - Agencia Creativa Digital . Diseño gráfico, desarrollo de software, VFX, edición de video y traducciones profesionales.">
     <meta name="keywords"
-        content="diseño 3D, renderizado, VFX, desarrollo web, desarrollo desktop, desarrollo full-stack, traducción, diseño 2D, edición de videos">
-    <meta name="author" content="VASCO. Productions">
+        content="diseño gráfico, desarrollo software, VFX, edición video, traducciones, agencia digital">
+    <meta name="author" content="VASCO Productions">
+    <meta name="theme-color" content="#D4AF37">
     <meta name="robots" content="index, follow">
 
     <meta name="google-site-verification" content="CwZGeWGKb-lvZrs0siGuYlXjihqBvaTgJrQOEWUnt6E">
     <meta name="google-site-verification" content="6SYubpnvFxCU1rjhSezSTp4Pc4s3oSASC7MjFNTEAPk">
 
-    <meta property="og:title" content="VASCO. Productions">
+    <!-- Open Graph -->
+    <meta property="og:title" content="VASCO. Productions | Agencia Creativa Digital">
+    <meta property="og:description"
+        content="Soluciones integrales de diseño, desarrollo y producción audiovisual para marcas modernas.">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://vascoproductions.github.io/vasco.production/">
-    <meta property="og:description" content="Diseño gráfico, desarrollo de software, VFX y traducciones.">
-    <meta property="og:image" content="https://vascoproductions.github.io/vasco.production/ICO/negro_icon.png">
-    <meta property="og:image:alt" content="VASCO Productions preview">
+    <meta property="og:image" content="https://vascoproductions.github.io/vasco.production/assets/og-image.jpg">
+    <meta property="og:image:alt" content="VASCO. Productions preview">
     <meta property="og:locale" content="es_ES">
+    <meta property="og:url" content="https://vascoproductions.github.io/vasco.production/">
+
 
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="VASCO. Productions">
     <meta name="twitter:description" content="Diseño gráfico, desarrollo de software, VFX y traducciones.">
     <meta name="twitter:image" content="https://vascoproductions.github.io/vasco.production/ICO/negro_icon.png">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <link rel='stylesheet' type='text/css' media='screen' href='CSS/index.css'>
-    <title>VASCO. Productions</title>
-    <link rel="icon" href="ICO/negro_icon.png">
 
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="">
+
+    <!-- Fonts Premium -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <title>VASCO. Productions</title>
+
+    <link rel="stylesheet" href="CSS/styles.css">
 </head>
 
 <body>
-    <!-- Header -->
-    <header>
-        <nav class="nave">
-            <div class="logo" id="logo" translate="no">
-                <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" id="svg1" alt="VASCO. Production"
-                    class="compani_icon" viewBox="0 0 130 130">
-                    <title id="title9">VASCO. Production</title>
-                    <defs id="defs1">
-                        <path id="rect6" d="M-219.742 252.601h157.105v141.703h-157.105z" />
-                        <path id="rect5" d="M-207.42 363.499H12.322v175.588H-207.42z" />
-                        <path id="rect6-4" d="M-219.742 252.601h157.105v141.703h-157.105z" />
-                    </defs>
-                    <g id="layer1" style="opacity:1">
-                        <path id="path1"
-                            d="M65 0A65 65 0 0 0 0 65a65 65 0 0 0 65 65 65 65 0 0 0 65-65A65 65 0 0 0 65 0m0 2.5A62.5 62.5 0 0 1 127.5 65 62.5 62.5 0 0 1 65 127.5 62.5 62.5 0 0 1 2.5 65 62.5 62.5 0 0 1 65 2.5"
-                            style="display:inline;stroke-width:.263687" />
-                        <path id="path4"
-                            d="M65 4A61 61 0 0 0 4 65a61 61 0 0 0 61 61 61 61 0 0 0 61-61A61 61 0 0 0 65 4m0 11a50 50 0 0 1 50 50 50 50 0 0 1-50 50 50 50 0 0 1-50-50 50 50 0 0 1 50-50"
-                            style="display:inline;fill-opacity:1;stroke-width:1.20618" />
-                        <path id="text6-8"
-                            d="M-212.248 255.597c.055.141.083.235.13.39-.282.05-.476.13-.62.258-.207.192-.268.48-.379.88l-1.937 6.606h-.346l-2.288-6.85c-.152-.351-.174-.393-.236-.47-.098-.122-.176-.216-.32-.282-.141-.07-.16-.115-.402-.135l.215-.39h2.04v.39c-.367.035-.46.098-.585.188-.031.053-.081.105-.078.172.008.195.09.5.27.914l1.504 4.427 1.257-4.213c.161-.476.24-.705.275-.944.007-.051.12-.286.045-.38-.08-.065-.261-.122-.53-.165l-.1-.017v-.39z"
-                            aria-label="V"
-                            style="font-size:12px;font-family:&quot;Times New Roman&quot;;-inkscape-font-specification:&quot;Times New Roman, Normal&quot;;white-space:pre"
-                            transform="matrix(-12.28895 0 0 9.16066 -2581.174 -2306.48)" />
-                        <circle id="path8" cx="77.576" cy="106.96" r="3.5"
-                            style="display:inline;fill-opacity:1;stroke-width:.30868" />
-                    </g>
-                </svg>
-                <h1 class="marca" style="font-family: 'Times New Roman', Times, serif;">VASCO. Productions</h1>
+    <!-- 🌟 Preloader -->
+    <div class="preloader" id="preloader">
+        <div class="preloader-content">
+            <div class="logo-animation">
+                <span class="logo-icon"><svg xmlns:inkscape=" xmlns:sodipodi="
+                        http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:svg="http://www.w3.org/2000/svg" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                        xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/"
+                        width="150px" height="150px" viewBox="0 0 130 130" version="1.1" id="svg1"
+                        sodipodi:docname="Logo.svg" xml:space="preserve">
+                        <title id="title9">VASCO. Production</title>
+
+                        <g id="layer1" style="opacity:1">
+                            <path id="path1" style="display:inline;fill:#FFFFFF;stroke-width:0.263687"
+                                d="M 65.000167 0 A 65 65 0 0 0 0 65.000167 A 65 65 0 0 0 65.000167 129.99982 A 65 65 0 0 0 129.99982 65.000167 A 65 65 0 0 0 65.000167 0 z M 65.000167 2.5001058 
+A 62.5 62.5 0 0 1 127.50023 65.000167 A 62.5 62.5 0 0 1 65.000167 127.50023 A 62.5 62.5 0 0 1 2.5001058 65.000167 A 62.5 62.5 0 0 1 65.000167 2.5001058 z " />
+                            <path id="path4" style="display:inline;fill:#FFFFFF;fill-opacity:1;stroke-width:1.20618" d="M 65.000167 3.9997559 A 61 61 0 0 0 3.9997559 65.000167 A 61 61 0 0 0 65.000167 
+126.00006 A 61 61 0 0 0 126.00006 65.000167 A 61 61 0 0 0 65.000167 3.9997559 z M 65.000167 15.000118 A 50 50 0 0 1 115.00022 65.000167 A 50 50 0 0 1 65.000167 115.00022 A 
+50 50 0 0 1 15.000118 65.000167 A 50 50 0 0 1 65.000167 15.000118 z " />
+                            <path style="font-size:12px;font-family:'Times New Roman';fill:#FFFFFF;white-space:pre" d="m -212.24802,255.5967 c 0.0553,0.14137 0.0831,0.23481 0.12919,0.39009 -0.28125,0.0508 -0.47479,0.12952 -0.61933,0.25841 -0.20702,0.19141 -0.26812,0.48067 -0.37854,0.87891 l 
+-1.9377,6.60706 h -0.34598 l -2.28759,-6.84961 c -0.15235,-0.35157 -0.17365,-0.39311 -0.23615,-0.47123 -0.0977,-0.12109 -0.17569,-0.21484 -0.32022,-0.28125 -0.14063,-0.0703 
+-0.15979,-0.11524 -0.40198,-0.13477 l 0.2153,-0.3901 h 2.04041 v 0.3901 c -0.36719,0.0351 -0.45969,0.0976 -0.58567,0.1875 -0.0312,0.0532 -0.0809,0.10518 -0.0779,0.1724 0.008,0.19498 
+0.0898,0.5 0.26953,0.91407 l 1.50476,4.42714 1.25652,-4.21389 c 0.16149,-0.47537 0.24091,-0.70481 0.2754,-0.94336 0.007,-0.0516 0.12001,-0.28588 0.0454,-0.38003 -0.0801,-0.0647 
+-0.26162,-0.12192 -0.53116,-0.16489 -0.0195,-0.004 -0.0527,-0.01 -0.0996,-0.0176 v -0.39009 z" id="text6-8"
+                                transform="matrix(-12.288951,0,0,9.160663,-2581.1739,-2306.4801)" aria-label="V"
+                                sodipodi:nodetypes="ccccccccccccccscccsccccc" />
+                            <circle style="display:inline;fill:#FFFFFF;fill-opacity:1;stroke-width:0.30868" id="path8"
+                                cx="77.575981" cy="106.96" r="3.5" />
+                        </g>
+                    </svg></span>
+                <br>
+                <span class="logo-v">V</span>
+                <span class="logo-asco">ASCO</span>
+                <span class="logo-dot">.</span>
+                <span class="logo-asco"> Productions</span>
             </div>
-            <div class="hamburger" id="hamburger">
-                <span class="bar" id="bar"></span>
-                <span class="bar" id="bar1"></span>
-                <span class="bar" id="bar2"></span>
+            <div class="loading-bar">
+                <div class="loading-progress"></div>
             </div>
-            <ul class="nav-links" id="nav-links">
-                <li class="animate-slide-in-left"><a href="#home"><i class="fas fa-home"></i> Inicio</a></li>
-                <li class="animate-slide-in-left"><a href="#about"><i class="fas fa-info"></i> Nosotros</a></li>
-                <li class="animate-slide-in-left"><a href="#services"><i class="fas fa-file"></i> Servicios</a></li>
-                <li class="animate-slide-in-left"><a href="#contact"><i class="fas fa-mobile"></i> Contacto</a></li>
-                <li class="animate-slide-in-left"><a href="Solicitar/Solicitar.html"><i class="fas fa-link"></i>
-                        Solicitar</a></li>
+            <p class="loading-text">Cargando...</p>
+        </div>
+    </div>
+
+    <!-- 🌟 Custom Cursor -->
+    <div class="cursor" id="cursor"></div>
+    <div class="cursor-follower" id="cursor-follower"></div>
+
+    <!-- 🌟 Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo" data-aos="fade-right">
+                <span class="logo-icon"><svg xmlns:inkscape=" xmlns:sodipodi="
+                        http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:svg="http://www.w3.org/2000/svg" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                        xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/"
+                        width="50px" height="50px" viewBox="0 0 130 130" version="1.1" id="svg1"
+                        sodipodi:docname="Logo.svg" xml:space="preserve">
+                        <title id="title9">VASCO. Production</title>
+
+                        <g id="layer1" style="opacity:1">
+                            <path id="path1" style="display:inline;fill:#FFFFFF;stroke-width:0.263687"
+                                d="M 65.000167 0 A 65 65 0 0 0 0 65.000167 A 65 65 0 0 0 65.000167 129.99982 A 65 65 0 0 0 129.99982 65.000167 A 65 65 0 0 0 65.000167 0 z M 65.000167 2.5001058 
+A 62.5 62.5 0 0 1 127.50023 65.000167 A 62.5 62.5 0 0 1 65.000167 127.50023 A 62.5 62.5 0 0 1 2.5001058 65.000167 A 62.5 62.5 0 0 1 65.000167 2.5001058 z " />
+                            <path id="path4" style="display:inline;fill:#FFFFFF;fill-opacity:1;stroke-width:1.20618" d="M 65.000167 3.9997559 A 61 61 0 0 0 3.9997559 65.000167 A 61 61 0 0 0 65.000167 
+126.00006 A 61 61 0 0 0 126.00006 65.000167 A 61 61 0 0 0 65.000167 3.9997559 z M 65.000167 15.000118 A 50 50 0 0 1 115.00022 65.000167 A 50 50 0 0 1 65.000167 115.00022 A 
+50 50 0 0 1 15.000118 65.000167 A 50 50 0 0 1 65.000167 15.000118 z " />
+                            <path style="font-size:12px;font-family:'Times New Roman';fill:#FFFFFF;white-space:pre" d="m -212.24802,255.5967 c 0.0553,0.14137 0.0831,0.23481 0.12919,0.39009 -0.28125,0.0508 -0.47479,0.12952 -0.61933,0.25841 -0.20702,0.19141 -0.26812,0.48067 -0.37854,0.87891 l 
+-1.9377,6.60706 h -0.34598 l -2.28759,-6.84961 c -0.15235,-0.35157 -0.17365,-0.39311 -0.23615,-0.47123 -0.0977,-0.12109 -0.17569,-0.21484 -0.32022,-0.28125 -0.14063,-0.0703 
+-0.15979,-0.11524 -0.40198,-0.13477 l 0.2153,-0.3901 h 2.04041 v 0.3901 c -0.36719,0.0351 -0.45969,0.0976 -0.58567,0.1875 -0.0312,0.0532 -0.0809,0.10518 -0.0779,0.1724 0.008,0.19498 
+0.0898,0.5 0.26953,0.91407 l 1.50476,4.42714 1.25652,-4.21389 c 0.16149,-0.47537 0.24091,-0.70481 0.2754,-0.94336 0.007,-0.0516 0.12001,-0.28588 0.0454,-0.38003 -0.0801,-0.0647 
+-0.26162,-0.12192 -0.53116,-0.16489 -0.0195,-0.004 -0.0527,-0.01 -0.0996,-0.0176 v -0.39009 z" id="text6-8"
+                                transform="matrix(-12.288951,0,0,9.160663,-2581.1739,-2306.4801)" aria-label="V"
+                                sodipodi:nodetypes="ccccccccccccccscccsccccc" />
+                            <circle style="display:inline;fill:#FFFFFF;fill-opacity:1;stroke-width:0.30868" id="path8"
+                                cx="77.575981" cy="106.96" r="3.5" />
+                        </g>
+                    </svg></span>
+                <span class="logo-text">VASCO<span class="gold">. </span>Productions</span>
+            </a>
+
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#inicio" class="nav-link active">Inicio</a></li>
+                <li><a href="#nosotros" class="nav-link">Nosotros</a></li>
+                <li><a href="#servicios" class="nav-link">Servicios</a></li>
+                <!--<li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                <li><a href="#testimonios" class="nav-link">Testimonios</a></li>
+                <li><a href="#contacto" class="nav-link">Contacto</a></li>-->
             </ul>
 
-        </nav>
-    </header>
+            <div class="nav-actions">
+                <a href="Solicitar/Solicitar.html" class="btn-gold btn-small">
+                    <span>Solicitar</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+                <button class="hamburger" id="hamburger" aria-label="Menú">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
 
-    <!-- Carrusel Hero -->
-    <section id="home" class="hero-section">
-        <div class="carousel-container">
-            <div class="carousel-slide active"
-                style="background-image: url('https://picsum.photos/seed/design1/1920/1080.jpg');">
-                <div class="carousel-content animate-fade-in-up">
-                    <h1>Diseño Gráfico Innovador</h1>
-                    <p>Creamos identidades visuales que conectan con tu audiencia</p>
-                    <a href="#services" class="cta-button">Ver Servicios</a>
+    <!-- 🌟 Hero Section -->
+    <section class="hero" id="inicio">
+        <div class="hero-background">
+            <div class="gradient-overlay"></div>
+            <div class="particles" id="particles"></div>
+        </div>
+
+        <div class="hero-content">
+            <!--<div class="hero-badge" data-aos="fade-down" data-aos-delay="100">
+                <i class="fas fa-crown"></i>
+                <span>Premium Agency</span>
+            </div>-->
+
+            <h1 class="hero-title" data-aos="zoom-in" data-aos-delay="200">
+                <span class="title-line">Creando</span>
+                <span class="title-line gold-gradient">Experiencias</span>
+                <span class="title-line">Digitales</span>
+            </h1>
+
+            <p class="hero-subtitle" data-aos="fade-up" data-aos-delay="400"
+                style="margin-top: 5rem;margin-bottom: 5rem;">
+                Transformamos ideas en realidades digitales extraordinarias.
+                Más de 10 años creando soluciones integrales para marcas que buscan destacar.
+            </p>
+
+            <!--<div class="hero-stats" data-aos="fade-up" data-aos-delay="600">
+                <div class="stat-item">
+                    <span class="stat-number" data-count="10">0</span>
+                    <span class="stat-plus">+</span>
+                    <span class="stat-label">Años de Experiencia</span>
                 </div>
-            </div>
-            <div class="carousel-slide"
-                style="background-image: url('https://picsum.photos/seed/software2/1920/1080.jpg');">
-                <div class="carousel-content animate-slide-in-left">
-                    <h1>Desarrollo de Software</h1>
-                    <p>Soluciones digitales a medida para tu negocio</p>
-                    <a href="#services" class="cta-button">Explorar</a>
+                <div class="stat-item">
+                    <span class="stat-number" data-count="500">0</span>
+                    <span class="stat-plus">+</span>
+                    <span class="stat-label">Proyectos Completados</span>
                 </div>
-            </div>
-            <div class="carousel-slide"
-                style="background-image: url('https://picsum.photos/seed/video3/1920/1080.jpg');">
-                <div class="carousel-content animate-fade-in-up">
-                    <h1>VFX & Edición de Videos</h1>
-                    <p>Contenido audiovisual que impacta y convierte</p>
-                    <a href="#services" class="cta-button">Ver Ejemplos</a>
+                <div class="stat-item">
+                    <span class="stat-number" data-count="98">0</span>
+                    <span class="stat-plus">%</span>
+                    <span class="stat-label">Clientes Satisfechos</span>
                 </div>
+            </div>-->
+
+            <div class="hero-cta" data-aos="fade-up" data-aos-delay="800">
+                <a href="#servicios" class="btn-gold btn-large">
+                    <span>Explorar Servicios</span>
+                    <i class="fas fa-chevron-right"></i>
+                </a>
+                <a href="Solicitar/Solicitar.html" class="btn-outline btn-large">
+                    <span>Contactar Ahora</span>
+                    <i class="fas fa-envelope"></i>
+                </a>
             </div>
-            <div class="carousel-slide"
-                style="background-image: url('https://picsum.photos/seed/language4/1920/1080.jpg');">
-                <div class="carousel-content animate-slide-in-left">
-                    <h1>Traducciones de Idiomas</h1>
-                    <p>Llega a nuevos mercados con comunicación clara</p>
-                    <a href="#services" class="cta-button">Conocer Más</a>
+        </div>
+
+        <div class="hero-scroll">
+            <div class="scroll-indicator">
+                <span>Scroll</span>
+                <div class="scroll-line"></div>
+            </div>
+        </div>
+
+        <div class="hero-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+        </div>
+    </section>
+
+    <!-- 🌟 About Section -->
+    <section class="about" id="nosotros">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">Sobre Nosotros</span>
+                <h2 class="section-title">Agencia Creativa <span class="gold">Digital</span></h2>
+                <p class="section-subtitle">Especialistas en crear soluciones integrales para marcas modernas</p>
+            </div>
+
+            <div class="about-grid">
+                <div class="about-content" data-aos="fade-right">
+                    <div class="about-card">
+                        <div class="card-icon">
+                            <i class="fas fa-award"></i>
+                        </div>
+                        <h3>Excelencia Garantizada</h3>
+                        <p>Somos una agencia multidisciplinaria con más de 10 años de experiencia ayudando a clientes a
+                            alcanzar sus objetivos digitales. Nuestro compromiso con la calidad nos distingue.</p>
+                    </div>
+
+                    <div class="about-card">
+                        <div class="card-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h3>Equipo de Expertos</h3>
+                        <p>Contamos con especialistas en diseño, desarrollo, marketing digital y producción audiovisual,
+                            trabajando en sinergia para ofrecer resultados excepcionales.</p>
+                    </div>
+
+                    <div class="about-card">
+                        <div class="card-icon">
+                            <i class="fas fa-lightbulb"></i>
+                        </div>
+                        <h3>Innovación Constante</h3>
+                        <p>Nos mantenemos a la vanguardia de las tendencias digitales, implementando las últimas
+                            tecnologías y metodologías en cada proyecto.</p>
+                    </div>
+                </div>
+
+                <div class="about-visual" data-aos="fade-left">
+                    <div class="visual-container">
+                        <div class="visual-card main-card">
+                            <div class="card-glow"></div>
+                            <div class="card-content">
+                                <span class="years-number">10+</span>
+                                <span class="years-text">Años de<br>Experiencia</span>
+                            </div>
+                        </div>
+                        <div class="visual-card floating-card card-1">
+                            <i class="fas fa-palette"></i>
+                            <span>Diseño</span>
+                        </div>
+                        <div class="visual-card floating-card card-2">
+                            <i class="fas fa-code"></i>
+                            <span>Desarrollo</span>
+                        </div>
+                        <div class="visual-card floating-card card-3">
+                            <i class="fas fa-video"></i>
+                            <span>Video</span>
+                        </div>
+                        <div class="visual-card floating-card card-4">
+                            <i class="fas fa-language"></i>
+                            <span>Traducción</span>
+                        </div>
+                    </div>
                 </div>
             </div>
 
-            <div class="carousel-indicators">
-                <div class="indicator active"></div>
-                <div class="indicator"></div>
-                <div class="indicator"></div>
-                <div class="indicator"></div>
+            <div class="trust-badges" data-aos="fade-up">
+                <div class="badge-item">
+                    <i class="fas fa-shield-alt"></i>
+                    <span>Confianza</span>
+                </div>
+                <div class="badge-item">
+                    <i class="fas fa-handshake"></i>
+                    <span>Compromiso</span>
+                </div>
+                <div class="badge-item">
+                    <i class="fas fa-star"></i>
+                    <span>Calidad</span>
+                </div>
+                <div class="badge-item">
+                    <i class="fas fa-clock"></i>
+                    <span>Puntualidad</span>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Sección About -->
-    <section id="about" class="about-section">
-        <h2 class="section-title">Sobre Nosotros</h2>
-        <div class="about-content">
-            <div class="about-text">
-                <h3>Agencia Creativa Digital</h3>
-                <p>Somos una agencia multidisciplinaria especializada en crear soluciones integrales para marcas
-                    modernas. Con más de 10 años de experiencia, hemos ayudado a muchos clientes a alcanzar sus
-                    objetivos digitales.</p>
-                <p>Nuestro equipo está compuesto por expertos en diseño, desarrollo, marketing digital y producción
-                    audiovisual, trabajando juntos para ofrecer resultados excepcionales.</p>
-                <br>
-                <h3>Años de experiencia</h3>
-                <div class="stats animate-slide-in-left">
-                    <div class="stat-item animate-fade-in-up">
-                        <div class="stat-number animate-fade-in-up">4</div>
-                        <div class="stat-label animate-fade-in-up">Diseño Gráfico</div>
-                    </div>
-                    <div class="stat-item animate-fade-in-up">
-                        <div class="stat-number animate-fade-in-up">6</div>
-                        <div class="stat-label">Desarrollo de Software</div>
-                    </div>
-                    <div class="stat-item animate-fade-in-up">
-                        <div class="stat-number animate-fade-in-up">4</div>
-                        <div class="stat-label animate-fade-in-up">Edición de Videos</div>
-                    </div>
-                    <div class="stat-item animate-fade-in-up">
-                        <div class="stat-number animate-fade-in-up">15</div>
-                        <div class="stat-label animate-fade-in-up">Traducciones</div>
-                    </div>
-                </div>
+    <!-- 🌟 Services Section -->
+    <section class="services" id="servicios">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">Nuestros Servicios</span>
+                <h2 class="section-title">Soluciones <span class="gold">Integrales</span></h2>
+                <p class="section-subtitle">Servicios premium diseñados para impulsar tu marca</p>
             </div>
-            <div class="about-image">
-                <img src="https://picsum.photos/seed/team/600/400.jpg" alt="Nuestro Equipo"
-                    style="width:100%; border-radius:10px; box-shadow:0 10px 30px rgba(0,0,0,0.1);">
+
+            <div class="services-grid">
+                <!-- Service 1: Diseño Gráfico -->
+                <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-glow"></div>
+                    <div class="service-icon">
+                        <i class="fas fa-paint-brush"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3>Diseño Gráfico Innovador</h3>
+                        <p>Creamos identidades visuales que conectan con tu audiencia. Branding, logotipos, packaging,
+                            materiales promocionales y diseño web.</p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check"></i> Branding completo</li>
+                            <li><i class="fas fa-check"></i> Diseño de logotipos</li>
+                            <li><i class="fas fa-check"></i> Packaging premium</li>
+                            <li><i class="fas fa-check"></i> Materiales promocionales</li>
+                        </ul>
+                        <!--<a href="#contacto" class="service-link">
+                            Ver Servicios <i class="fas fa-arrow-right"></i>
+                        </a>-->
+                    </div>
+                    <div class="service-number">01</div>
+                </div>
+
+                <!-- Service 2: Desarrollo Software -->
+                <div class="service-card featured" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-glow"></div>
+                    <div class="service-badge">Popular</div>
+                    <div class="service-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3>Desarrollo de Software</h3>
+                        <p>Soluciones digitales a medida para tu negocio. Aplicaciones web, móviles y sistemas
+                            personalizados con tecnologías modernas.</p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check"></i> Apps Web, Móviles & Desktop</li>
+                            <li><i class="fas fa-check"></i> Sistemas personalizados</li>
+                            <li><i class="fas fa-check"></i> Tecnologías escalables</li>
+                            <li><i class="fas fa-check"></i> Seguridad avanzada</li>
+                        </ul>
+                        <!--<a href="#contacto" class="service-link">
+                            Explorar <i class="fas fa-arrow-right"></i>
+                        </a>-->
+                    </div>
+                    <div class="service-number">02</div>
+                </div>
+
+                <!-- Service 3: VFX & Video -->
+                <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service-glow"></div>
+                    <div class="service-icon">
+                        <i class="fas fa-film"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3>VFX & Edición de Videos</h3>
+                        <p>Contenido audiovisual que impacta y convierte. Producción, efectos especiales, motion
+                            graphics y edición profesional.</p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check"></i> Producción audiovisual</li>
+                            <li><i class="fas fa-check"></i> Efectos especiales VFX</li>
+                            <li><i class="fas fa-check"></i> Motion graphics</li>
+                            <li><i class="fas fa-check"></i> Edición profesional</li>
+                        </ul>
+                        <!--<a href="#contacto" class="service-link">
+                            Ver Ejemplos <i class="fas fa-arrow-right"></i>
+                        </a>-->
+                    </div>
+                    <div class="service-number">03</div>
+                </div>
+
+                <!-- Service 4: Traducciones -->
+                <div class="service-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="service-glow"></div>
+                    <div class="service-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3>Traducciones de Idiomas</h3>
+                        <p>Llega a nuevos mercados con comunicación clara. Localización y traducción profesional en
+                            múltiples idiomas.</p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check"></i> Múltiples idiomas</li>
+                            <li><i class="fas fa-check"></i> Localización cultural</li>
+                            <li><i class="fas fa-check"></i> Precisión técnica</li>
+                            <li><i class="fas fa-check"></i> Comunicación global</li>
+                        </ul>
+                        <!--<a href="#contacto" class="service-link">
+                            Conocer Más <i class="fas fa-arrow-right"></i>
+                        </a>-->
+                    </div>
+                    <div class="service-number">04</div>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Sección Servicios -->
-    <section id="services" class="services-section">
-        <h2 class="section-title">Nuestros Servicios</h2>
-        <div class="services-grid">
-            <div class="service-card animate-fade-in-up">
-                <img src="https://picsum.photos/seed/graphicdesign/400/240.jpg" alt="Diseño Gráfico"
-                    class="service-icon">
-                <div class="service-content animate-fade-in-up">
-                    <h3>Diseño Gráfico</h3>
-                    <p>Branding, logotipos, packaging, materiales promocionales y diseño web. Creamos identidades
-                        visuales coherentes que representan tu marca.</p>
+    <!-- 🌟 Portfolio Section 
+    <section class="portfolio" id="portfolio">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">Portfolio</span>
+                <h2 class="section-title">Proyectos <span class="gold">Destacados</span></h2>
+                <p class="section-subtitle">Algunos de nuestros trabajos más recientes</p>
+            </div>
 
+            <div class="portfolio-filter" data-aos="fade-up">
+                <button class="filter-btn active" data-filter="all">Todos</button>
+                <button class="filter-btn" data-filter="diseno">Diseño</button>
+                <button class="filter-btn" data-filter="desarrollo">Desarrollo</button>
+                <button class="filter-btn" data-filter="video">Video</button>
+            </div>
+
+            <div class="portfolio-grid">
+                <div class="portfolio-item" data-category="diseno" data-aos="fade-up">
+                    <div class="portfolio-image">
+                        <div class="portfolio-placeholder">
+                            <i class="fas fa-palette"></i>
+                        </div>
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <span class="portfolio-category">Diseño Gráfico</span>
+                                <h4>Identidad Visual Premium</h4>
+                                <a href="#" class="portfolio-link"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="desarrollo" data-aos="fade-up" data-aos-delay="100">
+                    <div class="portfolio-image">
+                        <div class="portfolio-placeholder">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <span class="portfolio-category">Desarrollo Web</span>
+                                <h4>Plataforma E-commerce</h4>
+                                <a href="#" class="portfolio-link"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="video" data-aos="fade-up" data-aos-delay="200">
+                    <div class="portfolio-image">
+                        <div class="portfolio-placeholder">
+                            <i class="fas fa-video"></i>
+                        </div>
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <span class="portfolio-category">Producción Video</span>
+                                <h4>Campaña Publicitaria</h4>
+                                <a href="#" class="portfolio-link"><i class="fas fa-play-circle"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="diseno" data-aos="fade-up" data-aos-delay="300">
+                    <div class="portfolio-image">
+                        <div class="portfolio-placeholder">
+                            <i class="fas fa-box-open"></i>
+                        </div>
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <span class="portfolio-category">Packaging</span>
+                                <h4>Diseño de Empaque</h4>
+                                <a href="#" class="portfolio-link"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="desarrollo" data-aos="fade-up" data-aos-delay="400">
+                    <div class="portfolio-image">
+                        <div class="portfolio-placeholder">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <span class="portfolio-category">App Móvil</span>
+                                <h4>Aplicación iOS/Android</h4>
+                                <a href="#" class="portfolio-link"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="video" data-aos="fade-up" data-aos-delay="500">
+                    <div class="portfolio-image">
+                        <div class="portfolio-placeholder">
+                            <i class="fas fa-film"></i>
+                        </div>
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <span class="portfolio-category">Motion Graphics</span>
+                                <h4>Animación Corporativa</h4>
+                                <a href="#" class="portfolio-link"><i class="fas fa-play-circle"></i></a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
 
-            <div class="service-card animate-fade-in-up">
-                <img src="https://picsum.photos/seed/softwaredev/400/240.jpg" alt="Desarrollo de Software"
-                    class="service-icon">
-                <div class="service-content animate-fade-in-up">
-                    <h3>Desarrollo de Software</h3>
-                    <p>Aplicaciones web, móviles y sistemas personalizados. Utilizamos tecnologías modernas para
-                        construir soluciones escalables y seguras.</p>
-
-                </div>
-            </div>
-
-            <div class="service-card animate-fade-in-up">
-                <img src="https://picsum.photos/seed/vfx/400/240.jpg" alt="VFX & Edición" class="service-icon">
-                <div class="service-content animate-fade-in-up">
-                    <h3>VFX & Edición de Videos</h3>
-                    <p>Producción de contenido audiovisual, efectos especiales, motion graphics y edición profesional
-                        para campañas publicitarias y branded content.</p>
-
-                </div>
-            </div>
-
-            <div class="service-card animate-fade-in-up">
-                <img src="https://picsum.photos/seed/translation/400/240.jpg" alt="Traducción de Idiomas"
-                    class="service-icon">
-                <div class="service-content animate-fade-in-up">
-                    <h3>Traducciones de Idiomas</h3>
-                    <p>Servicio de localización y traducción profesional en múltiples idiomas, asegurando la precisión
-                        cultural y técnica en tus comunicaciones globales.</p>
-
-                </div>
+            <div class="portfolio-cta" data-aos="fade-up">
+                <a href="#contacto" class="btn-gold btn-large">
+                    <span>Ver Más Proyectos</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer id="contact">
-        <div class="footer-content">
-            <div class="footer-column">
-                <h3 class="marca" translate="no">VASCO. Productions</h3>
-                <p>Agencia creativa integral dedicada a impulsar el crecimiento de tus negocios mediante soluciones
-                    innovadoras en diseño, tecnología y comunicación.</p>
-                <div class="social-links">
-                    <a href="https://www.facebook.com/share/1A1xfprrQ1/" target="_blank" class="social-link"><i
-                            class="fab fa-facebook-f"></i></a>
-                    <a href="https://instagram.com/vasco._productions" target="_blank" class="social-link"><i
-                            class="fab fa-instagram"></i></a>
-                    <a href="https://wa.me/5363699055" target="_blank" class="social-link"><i
-                            class="fab fa-whatsapp"></i></a>
-                    <a href="mailto:vasco.productions.info@gmail.com" target="_blank" class="social-link"><i
-                            class="fas fa-envelope"></i></a>
+    <!-- 🌟 Testimonials Section 
+    <section class="testimonials" id="testimonios">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">Testimonios</span>
+                <h2 class="section-title">Lo Que Dicen <span class="gold">Nuestros Clientes</span></h2>
+                <p class="section-subtitle">Experiencias reales de quienes han confiado en nosotros</p>
+            </div>
+
+            <div class="testimonials-slider" data-aos="fade-up">
+                <div class="testimonials-track" id="testimonials-track">
+                    <div class="testimonial-card">
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">"VASCO Productions transformó completamente nuestra imagen de marca.
+                            Su atención al detalle y profesionalidad superaron todas nuestras expectativas."</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div class="author-info">
+                                <h5>María González</h5>
+                                <span>CEO, TechStart Inc.</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">"El equipo de desarrollo creó una aplicación excepcional que ha
+                            revolucionado nuestro negocio. Altamente recomendados para proyectos complejos."</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div class="author-info">
+                                <h5>Carlos Mendoza</h5>
+                                <span>Director Digital, InnovaCorp</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">"La calidad de sus videos y efectos visuales es impresionante.
+                            Nuestra campaña publicitaria tuvo un impacto increíble gracias a su trabajo."</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div class="author-info">
+                                <h5>Ana Lucía Torres</h5>
+                                <span>Marketing Manager, GlobalBrands</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonials-nav">
+                    <button class="nav-btn prev" id="test-prev"><i class="fas fa-chevron-left"></i></button>
+                    <div class="nav-dots" id="nav-dots">
+                        <span class="dot active"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </div>
+                    <button class="nav-btn next" id="test-next"><i class="fas fa-chevron-right"></i></button>
                 </div>
             </div>
+        </div>
+    </section>-->
 
-            <div class="footer-column">
-                <h3>Contacto</h3>
-                <ul class="contact-info">
-                    <li><i class="fas fa-phone"></i> +53 6 369 9055</li>
-                    <li><i class="fas fa-envelope" translate="no"></i> vasco.productions.info@gmail.com</li>
-                    <li id="solicitud"><a class="cta-button" href="Solicitar/Solicitar.html">Iniciar solicitud</a></li>
-                </ul>
+    <!-- 🌟 CTA Section 
+    <section class="cta-section">
+        <div class="cta-background">
+            <div class="cta-glow"></div>
+        </div>
+        <div class="container">
+            <div class="cta-content" data-aos="zoom-in">
+                <h2>¿Listo para Transformar tu Marca?</h2>
+                <p>Conversemos sobre tu próximo proyecto. La primera consulta es gratuita.</p>
+                <div class="cta-buttons">
+                    <a href="#contacto" class="btn-gold btn-large">
+                        <span>Iniciar Proyecto</span>
+                        <i class="fas fa-rocket"></i>
+                    </a>
+                    <a href="tel:+1234567890" class="btn-outline btn-large">
+                        <span>Llamar Ahora</span>
+                        <i class="fas fa-phone"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>-->
+
+    <!-- 🌟 Contact Section 
+    <section class="contact" id="contacto">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">Contacto</span>
+                <h2 class="section-title">Hablemos de tu <span class="gold">Proyecto</span></h2>
+                <p class="section-subtitle">Estamos aquí para ayudarte a crecer</p>
             </div>
 
-            <div class="footer-column">
-                <h3>Enlaces Rápidos</h3>
-                <ul class="quick-links">
-                    <li><a href="#home">Inicio</a></li>
-                    <li><a href="#about">Nosotros</a></li>
-                    <li><a href="#services">Servicios</a></li>
-                    <li><a href="#contact">Contacto</a></li>
-                    <li><a href="Solicitar/Solicitar.html">Solicitar</a></li>
-                    <li><a href="#">Términos de Servicio</a></li>
-                </ul>
+            <div class="contact-grid">
+                <div class="contact-info" data-aos="fade-right">
+                    <!--<div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="info-content">
+                            <h4>Ubicación</h4>
+                            <p>Disponibles Globalmente<br>Servicio Remoto y Presencial</p>
+                        </div>
+                    </div>
+
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="info-content">
+                            <h4>Email</h4>
+                            <p>hello@vascoproductions.com<br>proyectos@vascoproductions.com</p>
+                        </div>
+                    </div>
+
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <div class="info-content">
+                            <h4>Teléfono</h4>
+                            <p>+1 (555) 123-4567<br>Lun - Vie: 9:00 - 18:00</p>
+                        </div>
+                    </div>
+
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Behance">
+                            <i class="fab fa-behance"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Dribbble">
+                            <i class="fab fa-dribbble"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="contact-form-wrapper" data-aos="fade-left">
+                    <form class="contact-form" id="contact-form">
+                        <div class="form-header">
+                            <h3>Solicitar Presupuesto</h3>
+                            <p>Completa el formulario y te contactaremos en 24 horas</p>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Nombre completo *</label>
+                                <input type="text" id="name" name="name" required placeholder="Tu nombre">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Correo electrónico *</label>
+                                <input type="email" id="email" name="email" required placeholder="tu@email.com">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="company">Empresa</label>
+                            <input type="text" id="company" name="company" placeholder="Nombre de tu empresa">
+                            <i class="fas fa-building"></i>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="service">Servicio de interés *</label>
+                            <select id="service" name="service" required>
+                                <option value="">Selecciona un servicio</option>
+                                <option value="diseno">Diseño Gráfico</option>
+                                <option value="desarrollo">Desarrollo de Software</option>
+                                <option value="vfx">VFX & Edición de Video</option>
+                                <option value="traduccion">Traducciones</option>
+                                <option value="multiple">Múltiples Servicios</option>
+                            </select>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="budget">Presupuesto estimado</label>
+                            <select id="budget" name="budget">
+                                <option value="">Selecciona rango</option>
+                                <option value="1000-5000">$1,000 - $5,000</option>
+                                <option value="5000-10000">$5,000 - $10,000</option>
+                                <option value="10000-25000">$10,000 - $25,000</option>
+                                <option value="25000+">$25,000+</option>
+                            </select>
+                            <i class="fas fa-dollar-sign"></i>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Descripción del proyecto *</label>
+                            <textarea id="message" name="message" rows="4" required
+                                placeholder="Cuéntanos sobre tu proyecto..."></textarea>
+                        </div>
+
+                        <div class="form-group checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="privacy" required>
+                                <span class="checkmark"></span>
+                                Acepto la política de privacidad y el tratamiento de mis datos *
+                            </label>
+                        </div>
+
+                        <button type="submit" class="btn-gold btn-full">
+                            <span>Enviar Solicitud</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>-->
+
+    <!-- 🌟 Footer -->
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="footer-grid">
+                    <div class="footer-brand">
+                        <a href="#" class="footer-logo">
+                            <span class="logo-icon"><svg xmlns:inkscape=" xmlns:sodipodi="
+                                    http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+                                    xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg"
+                                    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                                    xmlns:cc="http://creativecommons.org/ns#"
+                                    xmlns:dc="http://purl.org/dc/elements/1.1/" width="30px" height="30px"
+                                    viewBox="0 0 130 130" version="1.1" id="svg1" sodipodi:docname="Logo.svg"
+                                    xml:space="preserve">
+                                    <title id="title9">VASCO. Productions</title>
+
+                                    <g id="layer1" style="opacity:1">
+                                        <path id="path1" style="display:inline;fill:#FFFFFF;stroke-width:0.263687"
+                                            d="M 65.000167 0 A 65 65 0 0 0 0 65.000167 A 65 65 0 0 0 65.000167 129.99982 A 65 65 0 0 0 129.99982 65.000167 A 65 65 0 0 0 65.000167 0 z M 65.000167 2.5001058 
+A 62.5 62.5 0 0 1 127.50023 65.000167 A 62.5 62.5 0 0 1 65.000167 127.50023 A 62.5 62.5 0 0 1 2.5001058 65.000167 A 62.5 62.5 0 0 1 65.000167 2.5001058 z " />
+                                        <path id="path4"
+                                            style="display:inline;fill:#FFFFFF;fill-opacity:1;stroke-width:1.20618" d="M 65.000167 3.9997559 A 61 61 0 0 0 3.9997559 65.000167 A 61 61 0 0 0 65.000167 
+126.00006 A 61 61 0 0 0 126.00006 65.000167 A 61 61 0 0 0 65.000167 3.9997559 z M 65.000167 15.000118 A 50 50 0 0 1 115.00022 65.000167 A 50 50 0 0 1 65.000167 115.00022 A 
+50 50 0 0 1 15.000118 65.000167 A 50 50 0 0 1 65.000167 15.000118 z " />
+                                        <path
+                                            style="font-size:12px;font-family:'Times New Roman';fill:#FFFFFF;white-space:pre"
+                                            d="m -212.24802,255.5967 c 0.0553,0.14137 0.0831,0.23481 0.12919,0.39009 -0.28125,0.0508 -0.47479,0.12952 -0.61933,0.25841 -0.20702,0.19141 -0.26812,0.48067 -0.37854,0.87891 l 
+-1.9377,6.60706 h -0.34598 l -2.28759,-6.84961 c -0.15235,-0.35157 -0.17365,-0.39311 -0.23615,-0.47123 -0.0977,-0.12109 -0.17569,-0.21484 -0.32022,-0.28125 -0.14063,-0.0703 
+-0.15979,-0.11524 -0.40198,-0.13477 l 0.2153,-0.3901 h 2.04041 v 0.3901 c -0.36719,0.0351 -0.45969,0.0976 -0.58567,0.1875 -0.0312,0.0532 -0.0809,0.10518 -0.0779,0.1724 0.008,0.19498 
+0.0898,0.5 0.26953,0.91407 l 1.50476,4.42714 1.25652,-4.21389 c 0.16149,-0.47537 0.24091,-0.70481 0.2754,-0.94336 0.007,-0.0516 0.12001,-0.28588 0.0454,-0.38003 -0.0801,-0.0647 
+-0.26162,-0.12192 -0.53116,-0.16489 -0.0195,-0.004 -0.0527,-0.01 -0.0996,-0.0176 v -0.39009 z" id="text6-8"
+                                            transform="matrix(-12.288951,0,0,9.160663,-2581.1739,-2306.4801)"
+                                            aria-label="V" sodipodi:nodetypes="ccccccccccccccscccsccccc" />
+                                        <circle style="display:inline;fill:#FFFFFF;fill-opacity:1;stroke-width:0.30868"
+                                            id="path8" cx="77.575981" cy="106.96" r="3.5" />
+                                    </g>
+                                </svg></span>
+                            <span class="logo-text">VASCO<span class="gold">.</span> Productions</span>
+                        </a>
+                        <p class="footer-desc">Agencia creativa digital especializada en diseño, desarrollo y producción
+                            audiovisual. Transformamos ideas en experiencias extraordinarias.</p>
+                        <div class="footer-social">
+                            <a href="https://www.facebook.com/share/1A1xfprrQ1/" target="_blank" class="social-link"><i
+                                    class="fab fa-facebook-f"></i></a>
+                            <a href="https://instagram.com/vasco._productions" target="_blank" class="social-link"><i
+                                    class="fab fa-instagram"></i></a>
+                            <a href="https://wa.me/5363699055" target="_blank" class="social-link"><i
+                                    class="fab fa-whatsapp"></i></a>
+                            <a href="mailto:vasco.productions.info@gmail.com" target="_blank" class="social-link"><i
+                                    class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="footer-links">
+                        <h4>Servicios</h4>
+                        <ul>
+                            <li><a href="#servicios">Diseño Gráfico</a></li>
+                            <li><a href="#servicios">Desarrollo Software</a></li>
+                            <li><a href="#servicios">VFX & Video</a></li>
+                            <li><a href="#servicios">Traducciones</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-links">
+                        <h4>Empresa</h4>
+                        <ul>
+                            <li><a href="#nosotros">Sobre Nosotros</a></li>
+                            <!--<li><a href="#portfolio">Portfolio</a></li>
+                            <li><a href="#testimonios">Testimonios</a></li>
+                            <li><a href="#">Blog</a></li>-->
+                        </ul>
+                    </div>
+                    <div>
+                        <a href="Solicitar/Solicitar.html" class="btn-gold btn-small">
+                            <span>Solicitar</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+
+                    <!--<div class="footer-links">
+                        <h4>Legal</h4>
+                        <ul>
+                            <li><a href="#">Política de Privacidad</a></li>
+                            <li><a href="#">Términos de Servicio</a></li>
+                            <li><a href="#">Cookies</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-newsletter">
+                        <h4>Newsletter</h4>
+                        <p>Suscríbete para recibir las últimas noticias y ofertas exclusivas.</p>
+                        <form class="newsletter-form" id="newsletter-form">
+                            <input type="email" placeholder="Tu email" required>
+                            <button type="submit"><i class="fas fa-arrow-right"></i></button>
+                        </form>
+                    </div>-->
+                </div>
             </div>
         </div>
 
-        <div class="copyright" translate="no">
-            <p>&copy; 2026 VASCO. Productions <br> <span translate="yes">Todos los derechos reservados.</span></p>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="footer-bottom-content">
+                    <p>&copy; 2026 VASCO. Productions. Todos los derechos reservados.</p>
+                    <div class="footer-badges">
+                        <span class="badge"><i class="fas fa-shield-alt"></i> SSL Seguro</span>
+                        <span class="badge"><i class="fas fa-globe"></i> Global</span>
+                    </div>
+                </div>
+            </div>
         </div>
     </footer>
-    <script>
-        (function () {
-            const hamb = document.getElementById('hamburger');
-            const menu = document.getElementById('nav-links');
-            if (!hamb || !menu) return;
-            hamb.addEventListener('click', () => {
 
-                if (menu.classList.contains('active')) {
-                    menu.classList.remove('active');
-                    menu.classList.add('closing');
+    <!-- 🌟 Back to Top Button -->
+    <button class="back-to-top" id="back-to-top" aria-label="Volver arriba">
+        <i class="fas fa-arrow-up"></i>
+    </button>
 
-                    menu.addEventListener('animationend', function handler() {
-                        menu.classList.remove('closing');
-                        menu.removeEventListener('animationend', handler);
-                    });
-                } else {
-                    menu.classList.remove('closing');
-                    menu.classList.add('active');
-                }
-                hamb.classList.toggle('active');
+    <!-- 🌟 Toast Notification -->
+    <div class="toast" id="toast">
+        <div class="toast-icon"><i class="fas fa-check-circle"></i></div>
+        <div class="toast-message">Mensaje enviado correctamente</div>
+    </div>
 
-            });
-        })();
-
-       
-    </script>
-    <script src="JS/index.js"></script>
-
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="JS/main.js"></script>
 </body>
 
 </html>
